@@ -1,0 +1,209 @@
+:root {
+    font-family: sans-serif;
+}
+
+button,input,select,textarea{
+    font-family: inherit;
+    font-size:100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-style: none;
+}
+
+input {
+    appearance: none;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'norse bold';
+    src: url(Norse-Bold.otf);
+}
+
+img {
+    width: auto;
+    max-height: 100%;
+}
+
+.big-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    background-color: #f8f8f8;
+
+}
+
+.container-image {
+    position: relative;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-header {
+    height: 30%;
+    padding: 20px;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 2rem;
+    padding-right: 100px;
+
+}
+
+.form-main {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 150px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 10px lightgrey;
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-2 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.text-1 {
+    position: absolute;
+    bottom: 120px;
+    left: 30px;
+    padding-right: 30px;
+}
+
+
+.form-body {
+    height: auto;
+}
+
+input {
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    height: 1.5rem;
+}
+
+
+input:focus:invalid {
+    border: 1px solid lightgrey;
+}
+
+input:required:invalid {
+    border: 1px solid red;
+}
+
+input[type='password']:invalid::after {
+    content: 'min 8 char';
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+.submit {
+    width: min(150px,50%);
+    background-color: #27374D;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 5px 5px 5px grey;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.submit:active {
+    box-shadow: inset 1px 1px 3px #ccc;
+}
+
+div.logo-container {
+    background-color: rgba(27, 27, 27, 0.5);
+    width: 100%;
+    min-height: 150px;
+    left: 0px; 
+    top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    gap: 55px;
+
+}
+
+.logo-text {
+    font-family: 'norse bold';
+    font-size: 5rem;
+    color: white;
+}
+
+.logo {
+    width: 25%;
+    height: 25%;
+}
+
+.login-text span {
+    color: #27374D;
+    cursor: pointer;
+}
+
+.login-text span:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+label {
+    margin-bottom: 10px;
+    color: rgb(58, 58, 58);
+}
+
+label span {
+    font-weight: bold;
+}
+
+.first-column, .second-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header-text {
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 20px;
+}

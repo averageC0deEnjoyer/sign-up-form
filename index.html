@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="big-container">
+        <div class="container-image">
+            <img src="background.jpg" alt="winter" class="image">
+            <div class="logo-container">
+                <img src="logo.png" alt="logo" class="logo">
+                <p class="logo-text">Dududu</p>
+            </div> 
+        </div>
+        <div class="container-form">
+            <div class="form-header">
+                <p class="text-1">This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <p class="text-2">You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-header-text">Let's do this!</h1>
+                <form>
+                    <div class="form-main">
+                        <div class="first-column">
+                            <label for="firstname">FIRST NAME <span aria-label="required">*</span></label>
+                            <input type="text" id="firstname" name="firstname" class="fname" placeholder="Bob" required minlength="3">
+                            <label for="email">EMAIL <span aria-label="required">*</span></label>
+                            <input type="email" id="email" name="email" class="mail" required>
+                            <label for="pwd">PASSWORD <span aria-label="required">*</span></label>
+                            <input type="password" id="pwd" name="password" class="password" required pattern=".{8,}" >
+                        </div>
+                        <div class="second-column">
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" id="lastname" class="lname" name="lastname" placeholder="Ross">
+                                <label for="phonenum">PHONE NUMBER</label>
+                                <input type="tel" id="phonenum" class="pnum" name="phonenumber" pattern="^[0-9]*$">
+                                <label for="confirmpwd">CONFIRM PASSWORD <span aria-label="required">*</span></label>
+                                <input type="password" id="confirmpwd" class="confirmpwd" name="confirmpassword" required pattern=".{8,}" >
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <form><button class="submit">Create Account</button></form>
+                        <p class="login-text">Already have an account? <span>Log-in</span></p>
+                        
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+pattern using regex for validation 
+appearance : none???-->
